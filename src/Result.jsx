@@ -1,5 +1,8 @@
-export const Result = ({ enemySelect, result }) => {
+import { useStore } from "./store"
+
+export const Result = ({ result }) => {
   let finalResult = ""
+  const { enemySelect } = useStore()
 
 if (result === 0) {
     finalResult = 'あいこ'

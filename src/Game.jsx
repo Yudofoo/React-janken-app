@@ -1,15 +1,14 @@
-import { useState } from 'react'
 import { Button } from './Button'
 import { Result } from './Result'
+import { useStore } from './store'
 
 export const Game = () => {
-    const [ userSelect, setUserSelect ] = useState("")
-    const [ enemySelect, setEnemySelect ] = useState("")
+    const { userSelect, enemySelect } = useStore()
     const result = userSelect - enemySelect
   return (
     <div>
-        <Result enemySelect={enemySelect} result={result}/>
-        <Button setUserSelect={setUserSelect} setEnemySelect={setEnemySelect} />
+        <Result result={result}/>
+        <Button />
     </div>
     )
 }

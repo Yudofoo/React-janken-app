@@ -1,9 +1,12 @@
-export const Button = ({ setEnemySelect, setUserSelect }) => {
+import { useStore } from "./store";
 
+export const Button = () => {
+
+const { updateEnemySelect, updateUserSelect } = useStore()
 const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 const judge = (number) => {
-  setEnemySelect(random(1, 3))
-  setUserSelect(number)
+  updateEnemySelect(random(1, 3))
+  updateUserSelect(number)
 }
   return (
     <div>
