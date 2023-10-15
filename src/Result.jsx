@@ -1,4 +1,9 @@
-export const Result = ({ enemySelect, result }) => {
+import { useSelector } from "react-redux"
+
+export const Result = () => {
+  const userSelect = useSelector((state) => state.userSelect.userSelect)
+  const enemySelect = useSelector((state) => state.enemySelect.enemySelect)
+  const result = userSelect - enemySelect
   let finalResult = ""
 
 if (result === 0) {
