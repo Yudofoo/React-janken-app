@@ -1,4 +1,6 @@
 #Reactでじゃんけんアプリ
-https://react-janken-app.vercel.app/
 
-時間がある際にreact状態管理ライブラリの練習用にzustand, reduxで書き換えたいと思っています。
+zustandで書き換えた。
+ローカル環境では動作確認済。
+
+zustandはreduxに比べ容易に状態管理でき、Providerタワーを形成することもないので用いていきたい。
