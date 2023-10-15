@@ -1,4 +1,4 @@
-#Reactでじゃんけんアプリ
-https://react-janken-app.vercel.app/
+#Reactでじゃんけんアプリ Redux ver
 
-時間がある際にreact状態管理ライブラリの練習用にzustand, reduxで書き換えたいと思っています。
+Reduxを採用しコードを書き換えた。
+zustandよりコードが多く、記述も忘れてしまうため難しい。
