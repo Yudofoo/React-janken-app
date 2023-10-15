@@ -20,7 +20,7 @@ if (result === -1 || result === 2) {
      {enemySelect === 3 && <img src="rdesign_14298.png" alt=""/>}
     </div>
      <div className="flex justify-center text-3xl">Result: {finalResult}</div>
-    </div>: <div></div>
+    </div>: <div className="flex justify-center text-5xl text-red-500">Rock-Scissors-Paper Go!</div>
 }
 </>
   )
